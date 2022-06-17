@@ -60,6 +60,8 @@ header{
     }
 }
 
+
+
 .menu-container{
     @media screen and (max-width: 767px){
         display: none;
@@ -96,6 +98,11 @@ header{
         letter-spacing: 0.02em;
         color: $text-color-hover;
     } 
+
+    @media screen and (min-width:$desktop){
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
 }
 
 .contacts__link.mail{
@@ -109,10 +116,13 @@ header{
 
     @media screen and (min-width: $tablet){
         margin-bottom: 10px;
+
     }
     
     @media screen and (min-width: $desktop){
         margin-bottom: 0px;
+        padding-top: 32px;
+        padding-bottom: 32px;
     }
 }
 
@@ -199,6 +209,31 @@ header{
     }
 }
 
+.site-nav__item{
+    @media screen and (min-width: $tablet){
+        position: relative;
+        &:not(:last-child){
+            margin-right: 50px;  
+        }
+        }
+}
+
+.site-nav__link{
+
+    transition: color $transition-duration $transition-timing-function;
+
+    &:hover,
+    &:focus{
+        color: $text-color-hover;
+    }
+
+    @media screen and (min-width: $tablet){
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+}
+
+
 .contacts__icon{
     @media screen and (max-width: 767px){
         display: none;
@@ -270,15 +305,6 @@ header{
     
     @media screen and (min-width: $desktop){
         margin-left: 93px;
-    }
-}
-
-.site-nav__item{
-    @media screen and (min-width: $tablet){
-        position: relative;
-        &:not(:last-child){
-            margin-right: 50px;  
-        }
     }
 }
 
