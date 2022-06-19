@@ -406,62 +406,65 @@
 
     </main>
 
-    <footer class="footer-main">
+    <footer class="footer-section">
         <div class="container">
             <div class="footer">
                 <div class="footer__main">
-                <ul class="footer__list">
-                    <li class="footer__item"><a class="logo" lang="en" href=""><span class="logo--main">Web</span><span class="logo--inverse">Studio</span></a></li>
-                    <li class="footer__item"><address class="footer__address">г. Киев, пр-т Леси Украинки, 26</address></li>
-                    <li class="footer__item"><a class="footer__contacts" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                    <li class="footer__item"><a class="footer__contacts" href="tel:+380961111111">+38 096 111 11 11</a></li>            
-                </ul>
+                    <div class="footer__info">
+                        <a class="logo" lang="en" href=""><span class="logo--main">Web</span><span class="logo--inverse">Studio</span></a>
+                        <address class="footer__address">г. Киев, пр-т Леси Украинки, 26</address>
+                        <ul class="footer__list">
+                            <li class="footer__item"><a class="footer__contacts" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                            <li class="footer__item"><a class="footer__contacts" href="tel:+380961111111">+38 096 111 11 11</a></li>            
+                        </ul>
+                    </div>
            
-                <div class="footer-social">
-                    <h3 class="footer-social__title" >Присоединяйтесь</h3>
-                    <ul class="footer-social__list">
-                        <li>
-                            <a class="footer-social__network" href="">
-                                <svg class="footer-social__icon" width="20" height="20">
-                                    <use href="./images/icons.svg#icon-instagram"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="footer-social__network" href="">
-                                <svg class="footer-social__icon" width="20" height="20">
-                                    <use href="./images/icons.svg#icon-twitter"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="footer-social__network" href="">
-                                <svg class="footer-social__icon" width="20" height="20">
-                                    <use href="./images/icons.svg#icon-facebook"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="footer-social__network" href="">
-                                <svg class="footer-social__icon" width="20" height="20">
-                                    <use href="./images/icons.svg#icon-linkedin"></use>
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+                    <div class="footer-social">
+                        <h3 class="footer-social__title" >Присоединяйтесь</h3>
+                        <ul class="footer-social__list">
+                            <li class="footer-social__item">
+                                <a class="footer-social__network" href="">
+                                    <svg class="footer-social__icon" width="20" height="20">
+                                        <use href="./images/icons.svg#icon-instagram"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="footer-social__item">
+                                <a class="footer-social__network" href="">
+                                    <svg class="footer-social__icon" width="20" height="20">
+                                        <use href="./images/icons.svg#icon-twitter"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="footer-social__item">
+                                <a class="footer-social__network" href="">
+                                    <svg class="footer-social__icon" width="20" height="20">
+                                        <use href="./images/icons.svg#icon-facebook"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="footer-social__item">
+                                <a class="footer-social__network" href="">
+                                    <svg class="footer-social__icon" width="20" height="20">
+                                        <use href="./images/icons.svg#icon-linkedin"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <form action="follow-form" class="follow-form">
-                    <label name="email" class="follow-form__title" >Подпишитесь на рассылку
-                        <div class="follow-form__item">
-                        <input class="follow-form__input" type="email" name="email" placeholder="E-mail">
+                    <div class="follow-form__item">
+                        <div class="follow-form__window"> 
+                            <label name="email" class="follow-form__title" for="footer-form" >Подпишитесь на рассылку</label>
+                            <input class="follow-form__input" type="email" name="email" placeholder="E-mail" id="footer-form">
+                        </div>
                         <button class="follow-form__button" type="submit">Подписаться
                             <svg class="follow-form__icon" width="24" height="24">
                             <use href="./images/icons.svg#icon-icon-send"></use>
                             </svg>
                         </button>
-                        </div>
-                    </label>
+                    </div>
                 </form>
             </div>
         </div>

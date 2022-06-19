@@ -63,7 +63,9 @@
     @media screen and (min-width: $desktop){
         width: calc((100% - 30px*3) / 4); 
         margin-bottom: 0px;
-               
+        &:last-child{
+            margin-right: 0px;
+        }
     }
 }
 

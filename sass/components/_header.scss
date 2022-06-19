@@ -65,11 +65,11 @@ header{
 .menu-container{
     @media screen and (max-width: 767px){
         display: none;
-        position:absolute;
+        position:fixed;
         top: 0;
         left: 0;
         width: 100%;
-        height: 796px;
+        height: 100vh;
         text-align: left;
         background-color: white;
         padding-top: 48px;
@@ -128,8 +128,6 @@ header{
 
 .mobile-menu__network{
     @media screen and (max-width: 767px){
-        display: inline;
-        margin-top: 64px;
         font-size: 18px;
         line-height: 1.22;
         letter-spacing: 0.02em;
@@ -190,13 +188,8 @@ header{
 
 .site-nav__item{
     @media screen and (max-width: 767px){
-        margin-left: 40px;
         &:not(:last-child){
             margin-bottom: 32px;
-        }
-        
-        &:last-child{
-            margin-bottom: 302px;
         }
     }
 
@@ -247,9 +240,13 @@ header{
 }
 
 .contacts{
+
     @media screen and (max-width: 767px){
         display: flex;
         flex-direction: column-reverse;
+        position: absolute;
+        bottom: 134px;
+        left: 40px;
     }
 
     @media screen and (min-width: $tablet){
@@ -345,12 +342,16 @@ header{
 }
 
 .mobile-menu__social{
+    @extend %list;
     display: none;
 
+
     @media screen and (max-width: 767px){
-        display: block;
+        display: flex;
+        position: absolute;
+        bottom: 48px;
+        left: 40px;
         padding: 0;
-        margin-top: 64px;
         margin-bottom: 0;
-    }
+       }
 }
